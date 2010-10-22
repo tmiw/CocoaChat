@@ -53,6 +53,10 @@
 			{
 				stringToAdd = [commandLine substringWithRange:substringRange];
 			}
+			else if (escaping == YES)
+			{
+				stringToAdd = [NSString stringWithFormat:@"%C", ch];
+			}
 		}
 		else if (inString == YES)
 		{
