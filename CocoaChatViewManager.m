@@ -6,6 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#import "CommandLineParser.h"
 #import "CocoaChatViewManager.h"
 #import "CocoaChatDataSource.h"
 
@@ -85,7 +86,9 @@
 		CocoaChatChannelManager *channelManager = [self getCurrentSelectedManager];
 		if (channelManager != nil)
 		{
-			[channelManager sendText:[textfield stringValue]];
+			NSString *text = [textfield stringValue];
+			NSMutableArray *params = [[[CommandLineParser alloc] init] parseCommandLine:text];
+			[channelManager sendText:text];
 			[textfield setStringValue:@""];
 		}
 	}
