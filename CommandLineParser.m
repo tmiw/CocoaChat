@@ -15,9 +15,9 @@
 {
 	NSRange currentRange = {0, [commandLine length]};
 	NSRange proposedNewRange;
-	NSCharacterSet *delimiters = [NSCharacterSet characterSetWithCharactersInString:@" \t\r\n\"\'"];
+	NSCharacterSet *delimiters = [NSCharacterSet characterSetWithCharactersInString:@" \t\r\n\"\\"];
 	NSMutableArray *result = [[NSMutableArray alloc] init];
-	bool proposedInString = NO, inString = NO;
+	bool proposedInString = NO, inString = NO, escaping = NO;
 	
 	while (YES)
 	{
@@ -25,7 +25,8 @@
 		if (proposedNewRange.location == NSNotFound) break;
 		
 		unichar ch = [commandLine characterAtIndex:proposedNewRange.location];
-		if (ch == '"' || ch == '\'')
+		escaping = NO;
+		if (ch == '"')
 		{
 			// String handling.
 			if (proposedNewRange.location == 0) proposedInString = YES;
@@ -36,15 +37,21 @@
 			}
 		}
 
+		if (ch == '\\')
+		{
+			escaping = YES;
+			ch = [commandLine characterAtIndex:proposedNewRange.location + 1];
+		}
+		
 		NSRange substringRange = {currentRange.location, proposedNewRange.location - currentRange.location};
-
-		// TODO: strip '\'.
+		
+		NSString *stringToAdd = nil;
 		if (inString == NO)
 		{
 			if (substringRange.length > 0 || 
 				(substringRange.length == 0 && proposedInString == YES))
 			{
-				[result addObject:[commandLine substringWithRange:substringRange]];
+				stringToAdd = [commandLine substringWithRange:substringRange];
 			}
 		}
 		else if (inString == YES)
@@ -53,31 +60,48 @@
 			[result removeLastObject];
 			if ([oldString length] == 0)
 			{
-				[result addObject:
+				stringToAdd = 
 					[NSString stringWithFormat:@"%@%C", 
-						[commandLine substringWithRange:substringRange], ch]];
+						[commandLine substringWithRange:substringRange], ch];
 			}
 			else if (proposedInString == YES)
 			{
-				[result addObject:
+				stringToAdd = 
 					[NSString stringWithFormat:@"%@%@%C", 
-						oldString, [commandLine substringWithRange:substringRange], ch]];
+						oldString, [commandLine substringWithRange:substringRange], ch];
 			}
 			else
 			{
-				[result addObject:
+				stringToAdd = 
 					[NSString stringWithFormat:@"%@%@", 
-						oldString, [commandLine substringWithRange:substringRange]]];
+						oldString, [commandLine substringWithRange:substringRange]];
 			}
 
 		}
 
+		if (stringToAdd != nil)
+		{
+			[result addObject:stringToAdd];
+		}
+		
+		// Move forward past character being escaped, if in escape mode,
+		// to prevent tokenizer from grabbing it again (e.g. \")
+		if (escaping == YES)
+		{
+			proposedNewRange.location++;
+		}
+		
 		currentRange.location = proposedNewRange.location + 1;
 		currentRange.length = [commandLine length] - currentRange.location;
 		if (inString != proposedInString) inString = proposedInString;
 	}
 	
-	[result addObject:[commandLine substringFromIndex:currentRange.location]];
+	NSString *endString = [commandLine substringFromIndex:currentRange.location];
+	if ([endString length] > 0)
+	{
+		[result addObject:endString];
+	}
+	
 	return result;
 }
 
