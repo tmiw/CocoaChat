@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* CocoaChatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* CocoaChatAppDelegate.m */; };
+		7F017984126FE97800219DAB /* CocoaChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F017983126FE97800219DAB /* CocoaChatManager.m */; };
+		7F0179F31270063700219DAB /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7F0179F21270063700219DAB /* icon.icns */; };
+		7F6DCB311266B719007BE419 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6DCB301266B719007BE419 /* WebKit.framework */; };
+		7F6DCB3B1266BDEF007BE419 /* CocoaChatDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCB3A1266BDEF007BE419 /* CocoaChatDataSource.m */; };
+		7F6DCB3E1266BEA3007BE419 /* CocoaChatViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCB3D1266BEA3007BE419 /* CocoaChatViewManager.m */; };
+		7F6DCB461266C063007BE419 /* IRCClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6DCB451266C063007BE419 /* IRCClient.framework */; };
+		7F6DCB581266C2AE007BE419 /* CocoaChatServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCB571266C2AE007BE419 /* CocoaChatServer.m */; };
+		7F6DCB711266C65F007BE419 /* CocoaChatChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCB701266C65F007BE419 /* CocoaChatChannel.m */; };
+		7F6DCC3112680297007BE419 /* CocoaChatSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCC3012680297007BE419 /* CocoaChatSessionManager.m */; };
+		7F6DCC7C126808D0007BE419 /* CocoaChatChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCC7B126808D0007BE419 /* CocoaChatChannelManager.m */; };
+		7FD312FE126B95F9001D3153 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD312FD126B95F9001D3153 /* BWToolkitFramework.framework */; };
+		7FD313F7126B9660001D3153 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FD312FD126B95F9001D3153 /* BWToolkitFramework.framework */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FD313C6126B9619001D3153 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7FD313F7126B9660001D3153 /* BWToolkitFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* CocoaChatAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* CocoaChatAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* CocoaChat_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChat_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7F017982126FE97800219DAB /* CocoaChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatManager.h; sourceTree = "<group>"; };
+		7F017983126FE97800219DAB /* CocoaChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatManager.m; sourceTree = "<group>"; };
+		7F0179F21270063700219DAB /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		7F6DCB301266B719007BE419 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7F6DCB391266BDEF007BE419 /* CocoaChatDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatDataSource.h; sourceTree = "<group>"; };
+		7F6DCB3A1266BDEF007BE419 /* CocoaChatDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatDataSource.m; sourceTree = "<group>"; };
+		7F6DCB3C1266BEA3007BE419 /* CocoaChatViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatViewManager.h; sourceTree = "<group>"; };
+		7F6DCB3D1266BEA3007BE419 /* CocoaChatViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatViewManager.m; sourceTree = "<group>"; };
+		7F6DCB451266C063007BE419 /* IRCClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IRCClient.framework; path = /Users/mooneer/Library/Frameworks/IRCClient.framework; sourceTree = "<absolute>"; };
+		7F6DCB561266C2AE007BE419 /* CocoaChatServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatServer.h; sourceTree = "<group>"; };
+		7F6DCB571266C2AE007BE419 /* CocoaChatServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatServer.m; sourceTree = "<group>"; };
+		7F6DCB6F1266C65F007BE419 /* CocoaChatChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatChannel.h; sourceTree = "<group>"; };
+		7F6DCB701266C65F007BE419 /* CocoaChatChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatChannel.m; sourceTree = "<group>"; };
+		7F6DCC2F12680297007BE419 /* CocoaChatSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatSessionManager.h; sourceTree = "<group>"; };
+		7F6DCC3012680297007BE419 /* CocoaChatSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatSessionManager.m; sourceTree = "<group>"; };
+		7F6DCC691268075D007BE419 /* CocoaChatOutputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatOutputDelegate.h; sourceTree = "<group>"; };
+		7F6DCC7A126808D0007BE419 /* CocoaChatChannelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatChannelManager.h; sourceTree = "<group>"; };
+		7F6DCC7B126808D0007BE419 /* CocoaChatChannelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatChannelManager.m; sourceTree = "<group>"; };
+		7FD312FD126B95F9001D3153 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = /Users/mooneer/Downloads/BWToolkit/BWToolkitFramework.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* CocoaChat-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CocoaChat-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* CocoaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				7F6DCB311266B719007BE419 /* WebKit.framework in Frameworks */,
+				7F6DCB461266C063007BE419 /* IRCClient.framework in Frameworks */,
+				7FD312FE126B95F9001D3153 /* BWToolkitFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DCB551266C29D007BE419 /* Data */,
+				256AC3D80F4B6AC300CF3369 /* CocoaChatAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* CocoaChatAppDelegate.m */,
+				7F6DCB391266BDEF007BE419 /* CocoaChatDataSource.h */,
+				7F6DCB3A1266BDEF007BE419 /* CocoaChatDataSource.m */,
+				7F6DCB3C1266BEA3007BE419 /* CocoaChatViewManager.h */,
+				7F6DCB3D1266BEA3007BE419 /* CocoaChatViewManager.m */,
+				7F6DCC2F12680297007BE419 /* CocoaChatSessionManager.h */,
+				7F6DCC3012680297007BE419 /* CocoaChatSessionManager.m */,
+				7F6DCC691268075D007BE419 /* CocoaChatOutputDelegate.h */,
+				7F6DCC7A126808D0007BE419 /* CocoaChatChannelManager.h */,
+				7F6DCC7B126808D0007BE419 /* CocoaChatChannelManager.m */,
+				7F017982126FE97800219DAB /* CocoaChatManager.h */,
+				7F017983126FE97800219DAB /* CocoaChatManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DCB451266C063007BE419 /* IRCClient.framework */,
+				7F6DCB301266B719007BE419 /* WebKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				7FD312FD126B95F9001D3153 /* BWToolkitFramework.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* CocoaChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CocoaChat */ = {
+			isa = PBXGroup;
+			children = (
+				7F0179F21270063700219DAB /* icon.icns */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CocoaChat;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* CocoaChat_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* CocoaChat-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F6DCB551266C29D007BE419 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DCB561266C2AE007BE419 /* CocoaChatServer.h */,
+				7F6DCB571266C2AE007BE419 /* CocoaChatServer.m */,
+				7F6DCB6F1266C65F007BE419 /* CocoaChatChannel.h */,
+				7F6DCB701266C65F007BE419 /* CocoaChatChannel.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* CocoaChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CocoaChat" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				7FD313C6126B9619001D3153 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaChat;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CocoaChat;
+			productReference = 8D1107320486CEB800E47090 /* CocoaChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CocoaChat" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CocoaChat */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* CocoaChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				7F0179F31270063700219DAB /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* CocoaChatAppDelegate.m in Sources */,
+				7F6DCB3B1266BDEF007BE419 /* CocoaChatDataSource.m in Sources */,
+				7F6DCB3E1266BEA3007BE419 /* CocoaChatViewManager.m in Sources */,
+				7F6DCB581266C2AE007BE419 /* CocoaChatServer.m in Sources */,
+				7F6DCB711266C65F007BE419 /* CocoaChatChannel.m in Sources */,
+				7F6DCC3112680297007BE419 /* CocoaChatSessionManager.m in Sources */,
+				7F6DCC7C126808D0007BE419 /* CocoaChatChannelManager.m in Sources */,
+				7F017984126FE97800219DAB /* CocoaChatManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+					"\"$(SRCROOT)/../../Downloads/BWToolkit\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaChat_Prefix.pch;
+				INFOPLIST_FILE = "CocoaChat-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = CocoaChat;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+					"\"$(SRCROOT)/../../Downloads/BWToolkit\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaChat_Prefix.pch;
+				INFOPLIST_FILE = "CocoaChat-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = CocoaChat;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CocoaChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CocoaChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
