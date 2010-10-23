@@ -9,6 +9,7 @@
 #import "CommandLineParser.h"
 #import "CocoaChatViewManager.h"
 #import "CocoaChatDataSource.h"
+#import "CommandHistoryTextField.h"
 
 @implementation CocoaChatViewManager
 
@@ -76,20 +77,19 @@
 
 - (void)controlTextDidEndEditing:(NSNotification *)nd
 {
-	NSTextField *textfield = [nd object];
+	CommandHistoryTextField *textfield = [nd object];
     NSDictionary *dict  = [nd userInfo];
     NSNumber  *reason = [dict objectForKey: @"NSTextMovement"];
     int code = [reason intValue];
-	
-    if (code == NSReturnTextMovement)
+	CocoaChatChannelManager *channelManager = [self getCurrentSelectedManager];
+
+	if (channelManager != nil)
 	{
-		CocoaChatChannelManager *channelManager = [self getCurrentSelectedManager];
-		if (channelManager != nil)
+		if (code == NSReturnTextMovement)
 		{
 			NSString *text = [textfield stringValue];
-			NSMutableArray *params = [[[CommandLineParser alloc] init] parseCommandLine:text];
+			//NSMutableArray *params = [[[CommandLineParser alloc] init] parseCommandLine:text];
 			[channelManager sendText:text];
-			[textfield setStringValue:@""];
 		}
 	}
 }

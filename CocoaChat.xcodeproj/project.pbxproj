@@ -20,6 +20,8 @@
 		7F6DCC3112680297007BE419 /* CocoaChatSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCC3012680297007BE419 /* CocoaChatSessionManager.m */; };
 		7F6DCC7C126808D0007BE419 /* CocoaChatChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DCC7B126808D0007BE419 /* CocoaChatChannelManager.m */; };
 		7F75911912717CC700B09817 /* CommandLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F75911812717CC700B09817 /* CommandLineParser.m */; };
+		7F7591D01272B65A00B09817 /* CocoaChatCommandHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7591CF1272B65A00B09817 /* CocoaChatCommandHistory.m */; };
+		7F7592121272BEEE00B09817 /* CommandHistoryTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7592111272BEEE00B09817 /* CommandHistoryTextField.m */; };
 		7FD312FE126B95F9001D3153 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD312FD126B95F9001D3153 /* BWToolkitFramework.framework */; };
 		7FD313F7126B9660001D3153 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FD312FD126B95F9001D3153 /* BWToolkitFramework.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -71,6 +73,10 @@
 		7F6DCC7B126808D0007BE419 /* CocoaChatChannelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatChannelManager.m; sourceTree = "<group>"; };
 		7F75911712717CC700B09817 /* CommandLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandLineParser.h; sourceTree = "<group>"; };
 		7F75911812717CC700B09817 /* CommandLineParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandLineParser.m; sourceTree = "<group>"; };
+		7F7591CE1272B65A00B09817 /* CocoaChatCommandHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaChatCommandHistory.h; sourceTree = "<group>"; };
+		7F7591CF1272B65A00B09817 /* CocoaChatCommandHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaChatCommandHistory.m; sourceTree = "<group>"; };
+		7F7592101272BEEE00B09817 /* CommandHistoryTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandHistoryTextField.h; sourceTree = "<group>"; };
+		7F7592111272BEEE00B09817 /* CommandHistoryTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandHistoryTextField.m; sourceTree = "<group>"; };
 		7FD312FD126B95F9001D3153 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = /Users/mooneer/Downloads/BWToolkit/BWToolkitFramework.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* CocoaChat-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CocoaChat-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CocoaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +116,10 @@
 				7F017983126FE97800219DAB /* CocoaChatManager.m */,
 				7F75911712717CC700B09817 /* CommandLineParser.h */,
 				7F75911812717CC700B09817 /* CommandLineParser.m */,
+				7F7591CE1272B65A00B09817 /* CocoaChatCommandHistory.h */,
+				7F7591CF1272B65A00B09817 /* CocoaChatCommandHistory.m */,
+				7F7592101272BEEE00B09817 /* CommandHistoryTextField.h */,
+				7F7592111272BEEE00B09817 /* CommandHistoryTextField.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -269,6 +279,8 @@
 				7F6DCC7C126808D0007BE419 /* CocoaChatChannelManager.m in Sources */,
 				7F017984126FE97800219DAB /* CocoaChatManager.m in Sources */,
 				7F75911912717CC700B09817 /* CommandLineParser.m in Sources */,
+				7F7591D01272B65A00B09817 /* CocoaChatCommandHistory.m in Sources */,
+				7F7592121272BEEE00B09817 /* CommandHistoryTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
