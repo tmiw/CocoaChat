@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
-#import <BWToolkitFramework/BWToolkitFramework.h>
+//#import <BWToolkitFramework/BWToolkitFramework.h>
 #import "CocoaChatOutputDelegate.h"
 #import "CocoaChatSessionManager.h"
 #import "CocoaChatChannelManager.h"
@@ -19,7 +19,7 @@
 	IBOutlet NSTextField *chatTextField;
 	IBOutlet NSWindow *chatWindow;
 	IBOutlet NSMenu *channelContextMenu;
-	IBOutlet BWAnchoredPopUpButtonCell *selectedItemMenu;
+	//IBOutlet BWAnchoredPopUpButtonCell *selectedItemMenu;
 	
 	IBOutlet NSWindow *channelInspectorWindow;
 	
@@ -31,9 +31,9 @@
 @property (nonatomic, retain) NSOutlineView *chatOutlineView;
 @property (nonatomic, retain) NSTextField *chatTextField;
 @property (nonatomic, retain) NSWindow *chatWindow;
-@property (nonatomic, retain) BWAnchoredPopUpButtonCell *selectedItemMenu;
+//@property (nonatomic, retain) BWAnchoredPopUpButtonCell *selectedItemMenu;
 @property (nonatomic, retain) NSMenu *channelContextMenu;
-@property (nonatomic, retain) BWAnchoredPopUpButtonCell *popupCell;
+//@property (nonatomic, retain) BWAnchoredPopUpButtonCell *popupCell;
 @property (nonatomic, retain) NSWindow *channelInspectorWindow;
 
 -(void)initializeView;

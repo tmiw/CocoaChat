@@ -17,9 +17,9 @@
 @synthesize chatOutlineView;
 @synthesize chatTextField;
 @synthesize chatWindow;
-@synthesize selectedItemMenu;
+//@synthesize selectedItemMenu;
 @synthesize channelContextMenu;
-@synthesize popupCell;
+//@synthesize popupCell;
 
 @synthesize channelInspectorWindow;
 
@@ -121,7 +121,7 @@
 			[docElement appendChild:newDocBodyElement];
 			[chatContentsView setNeedsDisplay:YES];
 			
-			[selectedItemMenu setMenu:channelContextMenu];
+			//[selectedItemMenu setMenu:channelContextMenu];
 			[chatWindow makeFirstResponder:chatTextField];
 		}
 	}
